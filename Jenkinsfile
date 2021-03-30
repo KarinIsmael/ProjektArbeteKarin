@@ -7,18 +7,18 @@ pipeline{
         stage('Build'){
             steps{
                 echo 'Group 4'
-                sh 'java --version'
-                sh 'mvn clean compile'
+                bat 'java --version'
+                bat 'mvn clean compile'
             }
         }
         stage('Test'){
             steps{
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
         stage('Deploy'){
             steps {
-                sh 'mvn package'
+                bat 'mvn package'
             }
         }
     }
