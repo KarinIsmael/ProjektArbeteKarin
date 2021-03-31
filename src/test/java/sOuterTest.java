@@ -18,7 +18,7 @@ class sOuterTest {
     @Test
     void sayHejTest() {
         sOuter.whoIsJenkins();
-        assertEquals("Leeeeeroy JEEEEENKINS", outputStreamCaptor.toString()
+        assertEquals("Leeeeeroy JEEEEENKINS!", outputStreamCaptor.toString()
                 .trim());
 
     }
@@ -32,7 +32,7 @@ class sOuterTest {
         String[] args = {};
         sOuter.main(args);
 
-        assertEquals("Leeeeeroy JEEEEENKINS", outputStreamCaptor.toString()
+        assertEquals("Leeeeeroy JEEEEENKINS!", outputStreamCaptor.toString()
                 .trim());
 
 
